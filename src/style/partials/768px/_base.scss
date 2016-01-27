@@ -1,0 +1,50 @@
+.wrapper{
+  	flex-direction: row;
+  	justify-content: space-between;
+}
+
+header{
+	.logo{
+		margin-bottom: 0;
+	}
+	.menu{
+		display: none;
+	}
+	nav{
+		display: block;
+		width: auto;
+		ul{
+			text-align: left;
+			margin-bottom: 0px;
+			li{
+				display: inline-block;
+				padding-right: 0px;
+				height: auto;
+				&:after{
+					content: "/";
+				}
+				&:before{
+					content: "";
+				}
+				&:last-child{
+					margin-right: 0;
+					a{
+						margin-right: 0;
+					}
+					&:after{
+						content: "";
+					}
+				}
+				a{
+					color: $baseColor;
+					font-size: 0.875em;
+					margin-right: 10px;
+					border-bottom: 1px $baseYellow solid;
+					&:hover{
+						border-bottom: 1px $baseColor solid;
+					}
+				}
+			}
+		}
+	}
+}

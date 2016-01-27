@@ -1,0 +1,52 @@
+@font-face {
+    font-family: 'Intro';
+    src: url('#{$font-path}/8289.eot');
+    src: local('☺'), url('#{$font-path}/8289.woff') format('woff'), url('#{$font-path}/8289.ttf') format('truetype'), url('#{$font-path}/8289.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'OpenSansRegular';
+    src: url('#{$font-path}/OpenSansRegular.eot');
+    src: url('#{$font-path}/OpenSansRegular.eot') format('embedded-opentype'),
+         url('#{$font-path}/OpenSansRegular.woff2') format('woff2'),
+         url('#{$font-path}/OpenSansRegular.woff') format('woff'),
+         url('#{$font-path}/OpenSansRegular.ttf') format('truetype'),
+         url('#{$font-path}/OpenSansRegular.svg#OpenSansRegular') format('svg');
+}
+@font-face {
+    font-family: 'OpenSansBold';
+    src: url('#{$font-path}/OpenSansBold.eot');
+    src: url('#{$font-path}/OpenSansBold.eot') format('embedded-opentype'),
+         url('#{$font-path}/OpenSansBold.woff2') format('woff2'),
+         url('#{$font-path}/OpenSansBold.woff') format('woff'),
+         url('#{$font-path}/OpenSansBold.ttf') format('truetype'),
+         url('#{$font-path}/OpenSansBold.svg#OpenSansBold') format('svg');
+}
+@font-face {
+    font-family: 'OpenSansLight';
+    src: url('#{$font-path}/OpenSansLight.eot');
+    src: url('#{$font-path}/OpenSansLight.eot') format('embedded-opentype'),
+         url('#{$font-path}/OpenSansLight.woff2') format('woff2'),
+         url('#{$font-path}/OpenSansLight.woff') format('woff'),
+         url('#{$font-path}/OpenSansLight.ttf') format('truetype'),
+         url('#{$font-path}/OpenSansLight.svg#OpenSansLight') format('svg');
+}
+@font-face {
+    font-family: 'OpenSansItalic';
+    src: url('#{$font-path}/OpenSansItalic.eot');
+    src: url('#{$font-path}/OpenSansItalic.eot') format('embedded-opentype'),
+         url('#{$font-path}/OpenSansItalic.woff2') format('woff2'),
+         url('#{$font-path}/OpenSansItalic.woff') format('woff'),
+         url('#{$font-path}/OpenSansItalic.ttf') format('truetype'),
+         url('#{$font-path}/OpenSansItalic.svg#OpenSansItalic') format('svg');
+}
+@font-face {
+    font-family: 'OpenSansSemibold';
+    src: url('#{$font-path}/OpenSansSemibold.eot');
+    src: url('#{$font-path}/OpenSansSemibold.eot') format('embedded-opentype'),
+         url('#{$font-path}/OpenSansSemibold.woff2') format('woff2'),
+         url('#{$font-path}/OpenSansSemibold.woff') format('woff'),
+         url('#{$font-path}/OpenSansSemibold.ttf') format('truetype'),
+         url('#{$font-path}/OpenSansSemibold.svg#OpenSansSemibold') format('svg');
+}

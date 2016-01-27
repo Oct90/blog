@@ -1,0 +1,45 @@
+.select{
+	border: 1px solid $borderColor;
+	padding: 9px 12px;
+	color: #ccc;
+	background-color: #fff;
+	background-position: right center;
+	background-repeat: no-repeat;
+	cursor: pointer;
+	position: relative;
+	i{
+		right: 12px;
+	    position: absolute;
+	    top: 15px;
+	}
+	ul{
+		list-style: none; padding: 0; margin: 0; 
+		position: absolute;
+		top: 42px; left: -1px;
+		z-index: 5;
+		border: 1px solid $borderColor;
+		width: 100%;
+		color: $baseColor;
+		background-color: #fff;
+		display: none;
+		li{
+			list-style: none;
+			padding: 10px 12px;
+		}
+		li.selected{
+			display: none;
+		}
+		li:hover{
+			background-color: #333; 
+			color: #fff;
+		}
+	}
+	&.open,
+	&.open ul{
+		border: 1px solid $baseColor; 
+		color: $baseColor;
+	}
+}
+.select-desc{
+	display: none;
+}

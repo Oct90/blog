@@ -1,0 +1,44 @@
+header{
+	padding: 13px 0;
+	.logo{
+		width: 185px;
+		height: 24px;
+		background: url('../img/logo.png') no-repeat;
+		margin-bottom: 20px;
+	}
+	.menu{
+		color: $baseColor;
+		margin-bottom: 10px;
+		display: flex;
+		align-items: center;
+	}
+	nav{
+		display: none;
+		width: 100%;
+		&.open{
+			display: block;
+		}
+		ul{
+			text-align: center;
+			margin-bottom: 10px;
+			li{
+				display: block;
+				padding-right: 10px;
+				height: 42px;
+				line-height: 42px;
+				&:before,
+				&:after{
+					content: "-";
+				}
+				a{
+					color: $baseColor;
+					border-bottom: 1px $baseYellow solid;
+					margin: 0 10px;
+					&:hover{
+						border-bottom: 1px $baseColor solid;
+					}
+				}
+			}
+		}
+	}
+}

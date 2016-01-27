@@ -1,0 +1,52 @@
+aside{
+	order: 1;
+	width: 100%;
+	margin-top: 30px;
+	form{
+		div{
+			position: relative;
+			i{
+				position: absolute;
+				top: 14px;
+    			left: 12px;
+    			color: $borderColor;
+			}
+		}
+	}
+	.cat,
+	.top-post,
+	.banner,
+	.top-post{
+		margin-top: 30px;
+	}
+	.cat .title,
+	.top-post .title{
+		@include label;
+	}
+	.banner,
+	.top-post{
+		display: none;
+	}
+	.top-post{
+		.title{
+			margin-bottom: 20px;
+		}
+		.item{
+			display: flex;
+			flex-direction: row;
+			padding: 20px 0;
+			border-bottom: 1px $borderColor dashed;
+			&:last-child{
+				border: none;
+			}
+		  	.name{
+		  		font-size: 0.688em;
+		  		line-height: 1.125em;
+		  		margin-left: 10px;
+		  		text-transform: uppercase;
+		  		color: $baseColor;
+		  		font-family: 'OpenSansSemibold';
+		  	}
+		}
+	}
+}

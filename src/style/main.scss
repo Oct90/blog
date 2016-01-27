@@ -1,0 +1,25 @@
+/*
+* Third Party
+*/
+@import "../../bower_components/normalize.css/normalize.css";
+
+/*
+* Custom
+*/
+@import "partials/font-awesome/font-awesome";
+@import "partials/variables";
+@import "partials/fonts"; 
+@import "partials/base"; 
+@import "partials/elements/elements";
+@import "partials/index";
+@import "partials/section";
+@import "partials/detail";
+
+/*
+* Media
+*/
+@media all {
+    @media (min-width: 768px){
+		@import "partials/768px/768";
+    }
+}

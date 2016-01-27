@@ -1,0 +1,21 @@
+input[type=text], 
+input[type=email], 
+input[type=url], 
+input[type=password], 
+input[type=search], 
+textarea{
+	color: $baseColor;
+	border-width: 1px;
+	border-style: solid;
+	border-color: $borderColor;
+	padding: 10px 12px 10px 38px;
+	appearance: none;
+	box-sizing: border-box;
+	width: 100%;
+	outline: none;
+	transition: .2s ease-in-out;
+}
+textarea:focus,
+input:focus{
+	border-color: $baseColor;
+}

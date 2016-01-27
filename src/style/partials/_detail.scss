@@ -1,0 +1,49 @@
+article{
+	margin-top: 30px;
+	width: 100%;
+	p.bold{
+		font-family: 'OpenSansSemibold';
+	}
+	p.incut{
+		margin-left: 30px;
+		padding-left: 20px;
+		border-left: 2px #888 solid;
+		color: #888;
+		font-family: 'OpenSansItalic';
+	}
+	img.left{
+		float: left;
+		margin-right: 10px;
+	}
+	img.right{
+		float: right;
+		margin-left: 10px;
+	}
+	.author,
+	.comments,
+	form{
+		margin-top: 30px;
+		padding: 30px 20px;
+		box-sizing: border-box;
+		background: #fff;
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+	form{
+		margin-bottom: 10px;
+		input[type='text'],
+		input[type='email'],
+		textarea{
+			padding-left: 10px;
+		}
+		textarea{
+			resize: none;
+			height: 240px;
+		}
+		p+p+p{
+			width: 100%;
+		}
+	}
+}

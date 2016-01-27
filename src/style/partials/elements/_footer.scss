@@ -1,0 +1,10 @@
+footer{
+	margin-top: 20px;
+	padding: 50px 0;
+	text-align: center;
+	.copyrights{
+		@include fontSize14;
+		font-family: 'OpenSansItalic';
+		margin-bottom: 30px;
+	}
+}

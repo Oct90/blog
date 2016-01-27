@@ -1,0 +1,17 @@
+article{
+	.author{
+		display: flex;
+		flex-wrap: nowrap;
+		flex-direction: row;
+	}
+	.comments{
+		.main,
+		.sub{
+			display: flex;
+			align-items: flex-start;
+			.info{
+				margin-left: 20px;
+			}
+		}
+	}
+}

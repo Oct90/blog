@@ -1,0 +1,34 @@
+$font-path: "../fonts";
+
+$baseFont: 'OpenSansRegular';
+$baseColor: #000;
+$baseBg: #f3f3f3;
+$baseYellow: #edc80c;
+$baseGrey: #666;
+$borderColor: #ccc;
+$labelColor: #81878e;
+$inputBg: #f3f3f3;
+
+@mixin fontSize12{
+	font-size: 0.750em;
+	line-height: 1.125em;
+}
+@mixin fontSize14{
+	font-size: 0.875em;
+	line-height: 1.313em;
+}
+@mixin fontSize18{
+	font-size: 1.125em;
+	line-height: 1.688em;
+}
+@mixin container{
+	padding: 0 15px;
+	max-width: 1170px;
+	margin: 0 auto;
+}
+@mixin label{
+	font-size: 0.688em;
+	text-transform: uppercase;
+	color: $labelColor;
+    margin-bottom: 10px;
+}

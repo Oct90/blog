@@ -1,0 +1,133 @@
+html,
+body{
+	height: 100%;
+	width: 100%;
+}
+html{
+	font-family: $baseFont;
+	color: $baseColor;
+	line-height: 1.5em;
+}
+body{
+	background: $baseBg;
+}
+ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+a{
+	transition: .3s ease-in-out;
+	text-decoration: none;
+}
+img{
+	max-width: 100%;
+	height: auto;
+}
+h1{
+	line-height: 1.375em;
+}
+label{
+	display: block;
+	@include label;
+}
+p{
+	color: #666;
+	a{
+		color: $baseColor;
+		border-bottom: 1px $baseColor solid;
+		&:hover{
+			color: $baseYellow;
+			border-bottom: 1px #fff solid;
+		}
+	}
+}
+.hidden{
+	display: none;
+}
+a.loader,
+a.button,
+button[type='submit']{
+	font-size: 0.750em;
+}
+a.button,
+button[type='submit']{
+	width: 122px;
+	height: 31px;
+	background: #000;
+	border: 1px #000 solid;
+	text-align: center;
+	color: #ccc;
+	transition: .2s ease-in-out;
+	&:hover{
+		background: #fff;
+		color: #000;
+	}
+}
+button[type='submit']:focus{
+	outline: none;
+}
+a.button{
+	line-height: 33px;
+}
+a.loader{
+	color: $baseColor;
+	border-bottom: 1px #000 dashed;
+	margin: 0 auto;
+	&:hover i{
+		transform: rotate(180deg);
+	}
+	i{
+		transform: rotate(0deg);
+		transition: .2s ease-in-out;
+	}
+}
+.info .social,
+.social,
+.share,
+.unswer{
+	a{
+		display: inline-block;
+		width: 35px;
+		height: 35px;
+		text-align: center;
+		color: $baseColor;
+		border-radius: 50%;
+		&:hover{
+			border: 1px $baseColor solid;
+		}
+		i{
+			line-height: 35px;
+		}
+	}
+}
+.social a{
+	border: 1px $baseYellow solid;
+}
+.unswer a,
+.info .social a,
+.share a{
+	border: 1px #fff solid;
+}
+.wrapper{
+	@include container;
+	display: flex;
+	flex-wrap: wrap;
+	box-sizing: border-box;
+  	flex-direction: column;
+  	justify-content: center;
+  	align-items: center;
+}
+.wrapper.start{
+  	align-items: flex-start;
+}
+
+header,
+footer{
+	width: 100%;
+	background: $baseYellow;
+}
+
+@-ms-viewport {
+  width: device-width;
+}

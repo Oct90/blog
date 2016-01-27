@@ -1,0 +1,40 @@
+.select{
+	display: none;
+}
+.select-desc{
+	border: none;
+	padding: 9px 12px;
+	color: #ccc;
+	background-color: #fff;
+	position: relative;
+	display: block;
+	ul{
+		list-style: none;
+		position: static;
+		border: none;
+		width: 100%;
+		color: $baseColor;
+		display: block;
+		li{
+			padding: 11px 0px;
+			font-size: 0.875em;
+			position: relative;
+			border-bottom: 1px $borderColor dashed;
+			&:last-child{
+				border: none;
+			}
+			transition: .2s ease-in-out;
+			.count{
+				position: absolute;
+				right: 0;
+			}
+		}
+		li:hover{
+			color: $baseYellow;
+			cursor: pointer;
+		}
+		li.selected{
+			display: block;
+		}
+	}
+}

@@ -1,0 +1,38 @@
+.comments{
+	.comment{
+		@include fontSize14;
+		margin-top: 30px;
+		position: relative;
+		border-bottom: 1px $borderColor dashed;
+		padding-bottom: 10px;
+		&:last-child{
+			border: none;
+		}
+		.main{
+			border-bottom: 1px $borderColor dashed;
+			padding-bottom: 10px;
+			&:last-child{
+				border: none;
+				padding-bottom: 0px;
+			}
+		}
+		.unswer{
+			position: absolute;
+			top: 0px;
+			right: 0px;
+		}
+		.name{
+			text-transform: uppercase;
+			font-family: "OpenSansSemibold";
+			margin-top: 10px;
+		}
+		.date{
+			color: $baseGrey;
+			font-family: 'OpenSansItalic';
+			@include fontSize12;
+		}
+		.sub{
+			margin: 30px 0 0 60px;
+		}
+	}
+}

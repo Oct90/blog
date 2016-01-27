@@ -1,0 +1,23 @@
+.breadcrumb{
+	@include container;
+	display: flex;
+  	justify-content: flex-start;
+	box-sizing: border-box;
+	margin-top: 30px;
+  	li{
+  		font-size: 11px;
+  		i,
+  		a{
+  			color: $labelColor;
+  		}
+  		a{
+  			border-bottom: 1px $baseBg solid;
+  			&:hover{
+  				border-bottom: 1px $labelColor solid;
+  			}
+  		}
+  		i{
+  			margin: 0px 5px;
+  		}
+  	}
+}
